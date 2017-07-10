@@ -1,3 +1,5 @@
+require 'hanami'
+
 namespace :deploy do
   desc 'Runs hanami db migrate if migrations are set'
   task :migrate => [:set_hanami_env] do
